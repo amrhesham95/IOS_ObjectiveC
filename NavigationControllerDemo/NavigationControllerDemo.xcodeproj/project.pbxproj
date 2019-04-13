@@ -13,6 +13,7 @@
 		1FFFB7DA2261D784006EFE19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFFB7D92261D784006EFE19 /* Assets.xcassets */; };
 		1FFFB7DD2261D784006EFE19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FFFB7DB2261D784006EFE19 /* LaunchScreen.storyboard */; };
 		1FFFB7E02261D784006EFE19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFB7DF2261D784006EFE19 /* main.m */; };
+		1FFFB7E82262147B006EFE19 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFB7E72262147B006EFE19 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		1FFFB7DC2261D784006EFE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FFFB7DE2261D784006EFE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FFFB7DF2261D784006EFE19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FFFB7E62262147B006EFE19 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1FFFB7E72262147B006EFE19 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1FFFB7E922621D85006EFE19 /* ClearTextProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearTextProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,9 @@
 				1FFFB7DB2261D784006EFE19 /* LaunchScreen.storyboard */,
 				1FFFB7DE2261D784006EFE19 /* Info.plist */,
 				1FFFB7DF2261D784006EFE19 /* main.m */,
+				1FFFB7E62262147B006EFE19 /* SecondViewController.h */,
+				1FFFB7E72262147B006EFE19 /* SecondViewController.m */,
+				1FFFB7E922621D85006EFE19 /* ClearTextProtocol.h */,
 			);
 			path = NavigationControllerDemo;
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFFB7E82262147B006EFE19 /* SecondViewController.m in Sources */,
 				1FFFB7D52261D782006EFE19 /* ViewController.m in Sources */,
 				1FFFB7E02261D784006EFE19 /* main.m in Sources */,
 				1FFFB7D22261D782006EFE19 /* AppDelegate.m in Sources */,

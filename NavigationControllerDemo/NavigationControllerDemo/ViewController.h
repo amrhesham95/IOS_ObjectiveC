@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "ClearTextProtocol.h"
+@interface ViewController : UIViewController <ClearTextProtocol>
+@property (weak, nonatomic) IBOutlet UILabel *firstViewLbael;
+- (IBAction)firstViewButton:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 
 @end

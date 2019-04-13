@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "SecondViewController.h"
 @interface ViewController ()
 
 @end
@@ -20,4 +20,15 @@
 }
 
 
+- (IBAction)firstViewButton:(UIButton *)sender {
+    SecondViewController *secondVC= [self.storyboard instantiateViewControllerWithIdentifier:@"secondViewID"];
+    [secondVC setName : [_textField text]];
+    secondVC.protocol=self;
+    [self.navigationController pushViewController:secondVC animated:YES];
+    
+}
+
+-(void)clearText{
+    [self.textField setText:@""];
+}
 @end
