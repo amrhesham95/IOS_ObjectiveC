@@ -13,6 +13,8 @@
 		1FB9F50E2264BAB0007489F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB9F50D2264BAB0007489F9 /* Assets.xcassets */; };
 		1FB9F5112264BAB0007489F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB9F50F2264BAB0007489F9 /* LaunchScreen.storyboard */; };
 		1FB9F5142264BAB0007489F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9F5132264BAB0007489F9 /* main.m */; };
+		1FB9F51C2264BE65007489F9 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9F51B2264BE65007489F9 /* HistoryViewController.m */; };
+		1FB9F51F2264BF1D007489F9 /* AfterHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9F51E2264BF1D007489F9 /* AfterHistoryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		1FB9F5102264BAB0007489F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FB9F5122264BAB0007489F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FB9F5132264BAB0007489F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FB9F51A2264BE65007489F9 /* HistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		1FB9F51B2264BE65007489F9 /* HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		1FB9F51D2264BF1D007489F9 /* AfterHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AfterHistoryViewController.h; sourceTree = "<group>"; };
+		1FB9F51E2264BF1D007489F9 /* AfterHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AfterHistoryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				1FB9F50F2264BAB0007489F9 /* LaunchScreen.storyboard */,
 				1FB9F5122264BAB0007489F9 /* Info.plist */,
 				1FB9F5132264BAB0007489F9 /* main.m */,
+				1FB9F51A2264BE65007489F9 /* HistoryViewController.h */,
+				1FB9F51B2264BE65007489F9 /* HistoryViewController.m */,
+				1FB9F51D2264BF1D007489F9 /* AfterHistoryViewController.h */,
+				1FB9F51E2264BF1D007489F9 /* AfterHistoryViewController.m */,
 			);
 			path = TabWithNavigation;
 			sourceTree = "<group>";
@@ -143,7 +153,9 @@
 			files = (
 				1FB9F5092264BAAF007489F9 /* ViewController.m in Sources */,
 				1FB9F5142264BAB0007489F9 /* main.m in Sources */,
+				1FB9F51F2264BF1D007489F9 /* AfterHistoryViewController.m in Sources */,
 				1FB9F5062264BAAF007489F9 /* AppDelegate.m in Sources */,
+				1FB9F51C2264BE65007489F9 /* HistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

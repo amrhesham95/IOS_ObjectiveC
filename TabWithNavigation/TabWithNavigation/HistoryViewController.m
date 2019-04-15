@@ -7,7 +7,7 @@
 //
 
 #import "HistoryViewController.h"
-
+#import "AfterHistoryViewController.h"
 @interface HistoryViewController ()
 
 @end
@@ -29,4 +29,8 @@
 }
 */
 
+- (IBAction)historyBtn:(UIButton *)sender {
+    AfterHistoryViewController *afterVC=[self.storyboard instantiateViewControllerWithIdentifier:@"afterHistoryView"];
+    [self.navigationController pushViewController:afterVC animated:YES];
+}
 @end
