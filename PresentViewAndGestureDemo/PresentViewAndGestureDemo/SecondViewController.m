@@ -7,7 +7,6 @@
 //
 
 #import "SecondViewController.h"
-
 @interface SecondViewController ()
 
 @end
@@ -17,8 +16,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UISwipeGestureRecognizer *rec=[[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(swipeLeft)];
+    
+    rec.direction=UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:rec];
 }
-
+-(void)swipeLeft{
+    printf("Done");
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    
+}
 /*
 #pragma mark - Navigation
 
