@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "MADAnnotation.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet MKMapView *myMapView;
+- (IBAction)click:(UITapGestureRecognizer *)sender;
 
 @end
 
@@ -29,4 +30,18 @@
     
 }
 
+- (IBAction)click:(UITapGestureRecognizer *)sender {
+    CGPoint touchPoint= [sender locationInView:self.myMapView];
+    CLLocationCoordinate2D touchCoordinate=[_myMapView convertPoint:touchPoint toCoordinateFromView:self.myMapView];
+    MADAnnotation *myAnnotation =[MADAnnotation new];
+    myAnnotation.coordinate=touchCoordinate;
+    myAnnotation.title=@"MAD";
+    myAnnotation.subtitle=@"JETS";
+    
+    [_myMapView addAnnotation:myAnnotation];
+    
+}
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
+    printf("%s",[view.annotation.title UTF8String]);
+}
 @end

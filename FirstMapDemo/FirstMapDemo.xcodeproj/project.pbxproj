@@ -14,6 +14,7 @@
 		1F0B4BEC226F061B004E0151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B4BEA226F061B004E0151 /* LaunchScreen.storyboard */; };
 		1F0B4BEF226F061B004E0151 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0B4BEE226F061B004E0151 /* main.m */; };
 		1F0B4BF7226F065E004E0151 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0B4BF6226F065E004E0151 /* MapKit.framework */; };
+		1F0B4BFA226F0EA0004E0151 /* MADAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0B4BF9226F0EA0004E0151 /* MADAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		1F0B4BED226F061B004E0151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F0B4BEE226F061B004E0151 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F0B4BF6226F065E004E0151 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1F0B4BF8226F0EA0004E0151 /* MADAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADAnnotation.h; sourceTree = "<group>"; };
+		1F0B4BF9226F0EA0004E0151 /* MADAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 				1F0B4BEA226F061B004E0151 /* LaunchScreen.storyboard */,
 				1F0B4BED226F061B004E0151 /* Info.plist */,
 				1F0B4BEE226F061B004E0151 /* main.m */,
+				1F0B4BF8226F0EA0004E0151 /* MADAnnotation.h */,
+				1F0B4BF9226F0EA0004E0151 /* MADAnnotation.m */,
 			);
 			path = FirstMapDemo;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				1F0B4BE4226F0612004E0151 /* ViewController.m in Sources */,
 				1F0B4BEF226F061B004E0151 /* main.m in Sources */,
 				1F0B4BE1226F0612004E0151 /* AppDelegate.m in Sources */,
+				1F0B4BFA226F0EA0004E0151 /* MADAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
