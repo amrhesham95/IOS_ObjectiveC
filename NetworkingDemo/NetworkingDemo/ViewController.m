@@ -10,9 +10,9 @@
 
 @interface ViewController ()
 - (IBAction)synchBtn:(UIButton *)sender;
-
 - (IBAction)asynchBtn:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end
 
 @implementation ViewController
@@ -21,6 +21,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -38,6 +39,7 @@
     NSURLRequest *request= [[NSURLRequest alloc]initWithURL:url];
     NSURLConnection *connection= [[NSURLConnection alloc]initWithRequest:request delegate:self];
     [connection start];
+    [_webView loadRequest:request];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
@@ -54,6 +56,7 @@
     printf("error!!");
 }
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    [_textView setText:dataRecived];
+    
+   
 }
 @end
