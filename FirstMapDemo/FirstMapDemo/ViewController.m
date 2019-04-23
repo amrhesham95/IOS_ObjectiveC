@@ -16,11 +16,22 @@
 
 @implementation ViewController
 
+#pragma mark : lifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     [_myMapView setDelegate:self];
+    _locationManager= [CLLocationManager new];
+    [_locationManager setDistanceFilter:kCLHeadingFilterNone];
+    [_locationManager setDelegate:self];
+    [_locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    [_locationManager startUpdatingLocation];
+    [_locationManager requestAlwaysAuthorization];
+    
     // Do any additional setup after loading the view, typically from a nib.
+
 }
+
+# pragma mark :MapViewMethod
 - (void)mapView:(MKMapView *)mapView regionWillChangeAnimated:(BOOL)animated{
     printf("regionWillChangeAnimated\n");
 }
@@ -29,7 +40,7 @@
     printf("regionDidChangeAnimated\n");
     
 }
-
+# pragma mark : Actions
 - (IBAction)click:(UITapGestureRecognizer *)sender {
     CGPoint touchPoint= [sender locationInView:self.myMapView];
     CLLocationCoordinate2D touchCoordinate=[_myMapView convertPoint:touchPoint toCoordinateFromView:self.myMapView];
@@ -43,5 +54,11 @@
 }
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
     printf("%s",[view.annotation.title UTF8String]);
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
+    printf("updated!\n");
+    CLLocation *location= [locations lastObject];
+    printf("lat %f  lng %f",location.coordinate.latitude,location.coordinate.longitude);
 }
 @end
