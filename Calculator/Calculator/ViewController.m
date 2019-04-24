@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  Calculator
-//
-//  Created by Esraa Hassan on 4/14/19.
-//  Copyright © 2019 iti. All rights reserved.
-//
-
 #import "ViewController.h"
 #import "Calculator.h"
 
@@ -37,9 +29,9 @@
     _num1=[[_numOneTF text] integerValue];
     _num2=[[_numTwoTF text] integerValue];
     _result=[_calculator add:_num1 :_num2];
-
+    
     [_resultLabel setText:[NSString stringWithFormat:@"%d",_result] ];
-
+    
 }
 
 - (IBAction)subBtn:(UIButton *)sender {
@@ -60,16 +52,16 @@
 
 - (IBAction)divBtn:(UIButton *)sender {
     @try{
-    _num1=[[_numOneTF text] integerValue];
-    _num2=[[_numTwoTF text] integerValue];
-    _result=[_calculator div:_num1 :_num2];
-    			
+        _num1=[[_numOneTF text] integerValue];
+        _num2=[[_numTwoTF text] integerValue];
+        _result=[_calculator div:_num1 :_num2];
+        
         [_resultLabel setText:[NSString stringWithFormat:@"%d",_result] ];
         
     }
     @catch(NSException *ex){
         [_resultLabel setText:@"error"];
-
+        
     }
 }
 @end

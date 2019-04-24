@@ -1,4 +1,4 @@
-//
+/
 //  ViewController.h
 //  Calculator
 //
@@ -10,7 +10,7 @@
 #import "Calculator.h"
 @interface ViewController : UIViewController
 @property Calculator *calculator;
-@property NSNumberFormatter *	formatter;
+@property NSNumberFormatter *    formatter;
 @property (weak, nonatomic) IBOutlet UITextField *numOneTF;
 @property (weak, nonatomic) IBOutlet UITextField *numTwoTF;
 - (IBAction)addBtn:(UIButton *)sender;
@@ -21,4 +21,3 @@
 
 
 @end
-
