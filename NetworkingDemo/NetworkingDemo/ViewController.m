@@ -39,11 +39,10 @@
     NSURLRequest *request= [[NSURLRequest alloc]initWithURL:url];
     NSURLConnection *connection= [[NSURLConnection alloc]initWithRequest:request delegate:self];
     [connection start];
-    [_webView loadRequest:request];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
-    printf("didReceieveResponse");
+    printf("didReceieveResponse\n");
      dataRecived=[NSMutableString new];
 }
 
@@ -56,7 +55,8 @@
     printf("error!!");
 }
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    
+    NSURL *url= [NSURL URLWithString:@"https://maktoob.yahoo.com/?p=us"];
+    [_webView loadHTMLString:dataRecived baseURL:url];
    
 }
 @end
