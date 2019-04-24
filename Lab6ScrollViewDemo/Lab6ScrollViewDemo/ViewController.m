@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *myScrollView;
 
 @end
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [_myScrollView setScrollEnabled:YES];
+    [_myScrollView setContentSize:CGSizeMake(500, 1000)];
 }
 
 
