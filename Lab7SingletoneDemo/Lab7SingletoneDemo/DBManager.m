@@ -11,6 +11,7 @@
 @implementation DBManager
 static DBManager* sharedInstance;
 static dispatch_once_t predicate;
+static int counter=0;
 +(DBManager*) sharedInstance{
     //static DBManager* sharedInstance;
     dispatch_once(&predicate,^{
@@ -18,5 +19,14 @@ static dispatch_once_t predicate;
         printf("new object created");
     });
     return sharedInstance;
+}
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        counter++;
+        printf("%d\n",counter);
+    }
+    return self;
 }
 @end
